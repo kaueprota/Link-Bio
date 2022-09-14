@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+
+}
+
+body{
+    background: linear-gradient(29deg, rgba(36,62,203,1) 0%, rgba(103,12,174,1) 100%);
+    min-height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.perfil{
+    width: 110px;
+    height: 110px;
+    background-image: url(1652913309348.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 30px;
+    box-shadow: -3px 1px 15px 3px rgb(0 0 0 / 38%);
+    border-radius: 100%;
+}
+
+.myName{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.linguetas{
+    width: calc(80% - -50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.lingueta{
+    border-radius: 40px;
+    width: 53%;
+    height: 41px;
+    margin-bottom: 12px;
+    background-color: white;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 4px 3px 0px 2px black;
+}
+
+.lingueta:hover{
+    box-shadow: 4px 3px 5px 2px black;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+#desconto{
+    font-size: 16px;
+}
+
+.gitHub{
+    width: 100%;
+}
+
+.gitHub a{
+    font-size: 10px;
+}
+
+.imgGit{
+    background-image: url(github.png);
+    width: 100%;
+    height: 92px;
+    background-size: contain;
+    cursor: pointer;
+    margin-top: 38px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+ @media screen and (min-width: 2559px){
+    .lingueta{
+        width: 70%;
+        height: 60px;
+        margin: 27px;
+    }
+
+    a{
+        font-size: 40px;
+    }
+
+    #desconto{
+        font-size: 35px;
+    }
+
+    .imgGit{
+        margin-top: 35px;
+    }
+}
+
+    @media screen and (max-width: 900px) {
+    .linguetas{
+        width: 85%;
+    }
+    .lingueta{
+        width: 100%;
+        height: 41px;
+        margin: 9px;
+    }
+
+    a{
+        font-size: 16px;
+    }
+
+    #desconto{
+        font-size: 14px;
+    }
+    
+} 
+
+@media screen and (max-width: 375px){
+    #desconto{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 280px){
+    #desconto{
+        font-size: 9px;
+    }
+    a{
+        font-size: 12px;
+    }
+}
